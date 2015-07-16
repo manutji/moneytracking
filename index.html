@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moneytracking</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/png" href="img/fav-icon.png"/>
+</head>
+<body>
+
+
+	<menu>
+		<ul>
+			<li><a href="index.html">
+				<i class="fa fa-pencil"></i> <span class="title">Record</span>
+			</a></li>
+
+			<li><a href="list.html">
+				<i class="fa fa-bar-chart"></i> <span class="title">history</span>
+			</a></li>
+			<li><a href="graph.html">
+				<i class="fa fa-dot-circle-o"></i> <span class="title">Graph</span>
+			</a></li>
+			<li><a href="setting.html">
+				<i class="fa fa-cog"></i> <span class="title">Setting</span>
+			</a></li>
+			<!-- <li><a href="#">Contato</a></li> -->
+		</ul>
+	</menu>
+
+	<div class="navbar">
+		<div class="container">
+			<img id="logo" src="img/logo.png">
+			<p id="logo-name">MONEYTRACKING</p>
+			<div id="login-name">
+				<div class="btn-group">
+					<a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+					<span class="fa fa-caret-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+						<li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+						<li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+						<li class="divider"></li>
+					<li><a href="#"><i class="i"></i> Make admin</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="menu-toggle" class="nav-icon visible-xs" style="background-image: url(img/icon/menu.svg);">
+				
+			</div>
+
+			<a href="setting.html">
+				<div class="nav-icon visible-xs right" style="background-image: url(img/icon/setting.svg);"></div>
+			</a>
+
+			<div class="circle_group visible-xs">
+				<div class="circle active"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+			
+
+		</div>
+	</div> <!-- navbar -->
+
+	<section class="main">
+	<div class="container body" id="content">
+		<div class="left-box">
+			<div class="date-box">
+				<span id="today">Today</span>
+				<br>
+				<span class="date">10 July 2015</span>
+			</div>
+			<div class="menu">
+				<div class="menu-title active">
+						<i class="fa fa-pencil"></i> <span class="title">Record</span>
+				</div>
+
+				<div class="menu-title">
+					<a href="list.html">
+						<i class="fa fa-list-alt"></i> <span class="title">History</span>
+					</a>
+				</div>
+
+				<div class="menu-title">
+					<a href="graph.html">
+						<i class="fa fa-bar-chart"></i> <span class="title">Graph</span>
+					</a>
+				</div>
+
+				<!-- <a href="#">
+					<div class="menu-title">
+						<a href="#">
+							<i class="fa fa-dot-circle-o"></i> <span class="title">Goal</span>
+						</a>
+					</div>
+				</a> -->
+
+				<a href="#">
+					<div class="menu-title">
+						<a href="setting.html">
+							<i class="fa fa-cog"></i> <span class="title">Setting</span>
+						</a>
+					</div>
+				</a>
+
+			</div> <!-- menu -->
+		</div> <!-- left-box -->
+		<div class="right-box">
+			<div class="content-title hidden-xs">
+				<i class="fa fa-pencil"></i> Record Expenses
+				<div class="add-icon">
+					<a href="add-icon.html">
+						<i class="fa fa-plus-square-o"></i>
+					</a>
+					<!-- <i class="fa fa-cog"></i> -->
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="icon col-md-2 col-sm-2 col-xs-3 income">
+					<div class="icon-expenses" style="background-image: url(img/icon/income.svg);"></div>
+					<div class="icon-title">Income</div>
+				</div>
+		
+				<!-- favorite icon -->
+				<!-- <div class="icon col-md-2 col-sm-2 col-xs-3 favorite">
+					<div class="icon-expenses" style="background-image: url(img/icon/food.svg);">
+												<i class="fa fa-star"></i>
+						<span class="price">35</span>
+					</div>
+
+					<div class="icon-title">Food</div>
+
+				</div>
+				
+				<div class="icon col-md-2 col-sm-2 col-xs-3 favorite">
+					<div class="icon-expenses" style="background-image: url(img/icon/bus.svg);">
+						
+						<i class="fa fa-star"></i>
+						<span class="price">12</span>
+					</div>
+					<div class="icon-title">Bus</div>
+				</div> -->
+
+				<!-- // -->
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-cutlery"></i></div>
+					<div class="icon-title">Food</div>
+				</div>
+				
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-mobile"></i></div>
+					<div class="icon-title">Mobile</div>
+				</div>
+				
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-coffee"></i></div>
+					<div class="icon-title">Drinks</div>
+				</div>
+				
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-shopping-cart"></i></div>
+					<div class="icon-title">Shopping</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-book"></i></div>
+					<div class="icon-title">Books</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-tag"></i></div>
+					<div class="icon-title">General</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-barcode"></i></div>
+					<div class="icon-title">Groceries</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-shopping-cart"></i></div>
+					<div class="icon-title">Shopping</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-microphone"></i></div>
+					<div class="icon-title">Entertain</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-film"></i></div>
+					<div class="icon-title">Movies</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-users"></i></div>
+					<div class="icon-title">Social</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-user"></i></div>
+					<div class="icon-title">Personal</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-bus"></i></div>
+					<div class="icon-title">Transport</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-desktop"></i></div>
+					<div class="icon-title">Computer</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-gift"></i></div>
+					<div class="icon-title">Gift</div>
+				</div>
+
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-home"></i></div>
+					<div class="icon-title">House</div>
+
+					<!-- input desktop -->
+					<section class="desktop-input hidden-xs"> 
+
+						<div class="desktop-input">
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon" id="sizing-addon1">
+									<i class="fa fa-calculator"></i>
+								</span>
+								<input type="text" class="form-control" placeholder="Input your expenses" aria-describedby="sizing-addon1">
+							</div>
+							<button class="btn btn-default" type="submit">Save</button>
+						</div><!-- desktop-input -->
+					</section>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-plane"></i></div>
+					<div class="icon-title">Travel</div>
+				</div>
+
+				<div class="icon col-md-2 col-sm-2 col-xs-3">
+					<div class="icon-expenses"><i class="fa fa-medkit"></i></div>
+					<div class="icon-title">Medical</div>
+				</div>
+
+			</div>
+
+
+
+		</div> <!-- right-box -->
+		<div class="clearfix"></div>
+
+	</div> <!-- container -->
+	</section> <!-- main -->
+
+	<!-- mobile calculator -->
+
+	<section class="calculator visible-xs">
+		<div class="cal-bg">
+		<div class="cal-body">
+			<input>
+			<div class="delete"></div>
+
+			<div class="left">
+				<div class="value"> 
+					<a href="#">1</a>
+				</div>
+				<div class="value"> 
+					<a href="#">2</a>
+				</div>
+				<div class="value"> 
+					<a href="#">3</a>
+				</div>
+
+				<div class="value"> 
+					<a href="#">4</a>
+				</div>
+				<div class="value"> 
+					<a href="#">5</a>
+				</div>
+				<div class="value"> 
+					<a href="#">6</a>
+				</div>
+				<div class="value"> 
+					<a href="#">7</a>
+				</div>
+				<div class="value"> 
+					<a href="#">8</a>
+				</div>
+				<div class="value"> 
+					<a href="#">9</a>
+				</div>
+			</div>
+			
+			<div class="right">
+				<div class="sign">
+					<a href="#">+</a>
+				</div>
+				<div class="sign">
+					<a href="#">-</a>
+				</div>
+				<div class="sign">
+					<a href="#">*</a>
+				</div>
+				<div class="sign">
+					<a href="#">/</a>
+				</div>
+				
+			</div>
+			
+			<div class="bottom">
+				<div class="value">
+					<a href="#">.</a>
+				</div>
+				<div class="value">
+					<a href="#">0</a>
+				</div>
+				<div class="done">
+					<a href="#"><i class="fa fa-check"></i></a>
+				</div>
+			</div>
+
+			
+		</div> <!-- cal-bg -->
+
+		</div> <!-- cal-bg -->
+	</section>
+
+	<section class="result hide">
+		<div class="result-box">
+			<img id="vvv" class="svg blue" src="img/icon/beverage.svg" >
+			<p>30</p>
+		</div>
+	</section>
+
+
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
